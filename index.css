@@ -316,34 +316,24 @@ h5.btn:hover{
 .records{
     background: var(--linear-gradient);
     height: 330px;
+    color: var(--white-color);
 }
-.logos{
-    width: 12%;
-    object-fit: cover;
-}
+
 #logo-wrap{
-    display: grid;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 10rem;
+   text-align: center;
 }
-.item, .item4{
-    text-align:center;
-    background-color: transparent;
-    border: 1px solid transparent;
-    float: left;
-    width: 300;
-}
-
-.item p:first-of-type{
-    color: var(--white-color);
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-.item hr{
-    width: 12%;
+#logo-wrap i{
+ margin-left: 3.4rem;
+ font-size: 1.8rem;
+ padding-bottom: 1rem;
 }
 
-.item P:last-of-type{
-    font-size: 1.05rem;
-    color: var(--white-color);
+.records h1{
+    font-size: 2rem;
+    color: #fff;
 }
 
 /*Code ends here*/
@@ -742,7 +732,7 @@ position: relative;
 /*Code ends here*/
 
 /*media queries for medium sized screens*/
-@media screen and (max-width: 991px){
+@media  (max-width: 1024px){
     #header-container,.m-query,
     #card-container{
         display: flex;
@@ -781,7 +771,6 @@ position: relative;
     font-size: 3rem ;
 }
 
-
 /* tool */
 .tool-section{
   flex-direction: column-reverse;
@@ -791,22 +780,23 @@ position: relative;
     margin-top: -10rem;
 }
 
-/* records */
-.records{
-    height: 500px;
-}
-#logo-wrap{
-  display: grid;
-  margin-left: 100px;
-}
-
 /* pricing */
 .pricing{
-    height: 1900px;
+    height: auto;
+    padding-top: 10%;
+}
+.pricing h1{
+    margin-top: -2rem;
 }
 .card{
     width: 95%;
     margin: auto;
+    height: 95%;
+    
+}
+#card-container{
+    display: flex;
+    row-gap: 2rem;
 }
 /* work */
 .work h1{
@@ -867,16 +857,32 @@ margin-left: -3.5rem
     .blog h2{
        font-size: 1.5rem; 
     }
+
+    .records{
+        padding: 7%;
+        height: auto;
+     }
+     
+     #logo-wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+     }
 }
 
  /* media queries for small mobile phones and medium screen size
  */
 
- @media screen and (min-width: 250px) and (max-width: 590px){
+ @media screen and (max-width: 590px){
  .m-query{
     height: auto;
     padding: 4% 0px;
+    font-size: 0.9rem;
  }
+ html,body{
+    font-size: 0.9rem;
+ }
+ 
 #home .break-1{
  display: none;
  }
@@ -894,6 +900,12 @@ margin-left: -3.5rem
 }
 
 /* services */
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .services br{
     display: none;
 }
@@ -903,16 +915,24 @@ margin-left: -3.5rem
 .services p:nth-child(2){
     margin: 0 10px;
 }
+
 .box{
     max-width: 90%;
     margin-top: 20px;
 }
 .box p{
-display: inline;
 margin: auto;
+font-size: 0.9rem;
+max-width: 80%;
+
 }
 .box i{
     font-size: 3rem;
+}
+.box h3{
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 0.7rem;
 }
 
 /* features */
@@ -945,12 +965,15 @@ display: none;
 }
 /* records */
 .records{
-  height: 900px;
- }
- #logo-wrap{
-  display: block;
-  margin-left: 3rem;
- }
+   padding: 7%;
+   height: auto;
+}
+
+#logo-wrap{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 6rem;
+}
 
  /* work */
 #text-container{

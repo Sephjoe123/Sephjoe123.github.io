@@ -265,6 +265,15 @@ position: relative;
     color: #0f17a1;
 }
 
+@media screen and (max-width: 480px){
+html,body{
+    font-size: 0.9rem;
+}
+.header-container{
+    height: 40%;
+}
+}
+
 @media screen and (max-width: 991px){
     #header-container,.m-query
     {

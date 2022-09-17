@@ -148,7 +148,10 @@ font-size: 0.9rem;
     text-transform: uppercase;
     font-size: 0.85rem;
 }
-
+.btn-3{
+background-color: var(--linear-gradient);
+outline: none;
+}
 
 h3.btn{
     background-color: var(--white-color);
@@ -280,36 +283,35 @@ h5.btn:hover{
 /*ends here*/
 
 /*Code for 4th section*/
-#tool{
-    background-color: var(--white-color);
+.tool{
+    height: auto;
+    padding: 4%;
+    margin: auto;
 }
-.tool-section{
+#tool-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 8rem; 
+    gap: 10rem
 }
-
 .tool h1{
-    font-size: 1.7rem; 
+    max-width: 500px;
 }
-.tool p, .last-text{
-    font-size: 0.97rem;
+.tool p{
+    font-size: 0.9rem;
 }
 .tool-text{
-    margin-top: 4rem;
+    max-width: 580px;
+    margin-top: 10rem;
 }
+
 .last-text{
     display: block;
     background: 
     linear-gradient(-45deg, rgba(78,84,200,0.25),
      rgba(128,137,255,0.25));
-     padding: 10px 20px;
+     padding: 13px 12px;
 }
 
-.tool-button{
-    margin-top: 1.5rem;
-    margin-left: -0.1rem;
-}
 /*Code ends here*/
 
 /*Code for the 5th section*/
@@ -522,8 +524,10 @@ font-weight: bold;
     color: rgb(111, 111, 111);
     font-size: 0.95rem;
     border: 0.5px solid var(--white-color);
-    min-width: 700px;
-
+    width: 600px;
+}
+.business-dropdown{
+    width: 400
 }
 .dropdown-content,.dropdown-content-2,.dropdown-content-3{
     display: none;
@@ -760,7 +764,6 @@ position: relative;
  
 .box{
     max-width: 90%; 
-    
 }
 
 .services p{
@@ -772,18 +775,28 @@ position: relative;
 }
 
 /* tool */
-.tool-section{
-  flex-direction: column-reverse;
+#tool-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
 }
-
+.tool{
+   height: auto;
+}
 .tool-text{
     margin-top: -10rem;
+}
+.tool img{
+   height: auto;
+   max-width: 100%;
 }
 
 /* pricing */
 .pricing{
     height: auto;
-    padding-top: 10%;
+    padding-top: 15%;
 }
 .pricing h1{
     margin-top: -2rem;
@@ -868,6 +881,14 @@ margin-left: -3.5rem
         grid-template-columns: 1fr 1fr;
         gap: 6rem;
      }
+     .business{
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: row;
+    
+     }
+     
+     
 }
 
  /* media queries for small mobile phones and medium screen size
@@ -954,15 +975,7 @@ max-width: 80%;
 }
 
 /* tool */
-.tool-br{
-display: none;
-}
-.tool h1{
-    font-size: 1.3rem;
-}
-#tool-container{
-    max-width: 95%; 
-}
+
 /* records */
 .records{
    padding: 7%;
@@ -994,9 +1007,12 @@ display: none;
 font-size: 2.5rem ;
 }
 /* business */
- .business-dropdown{
-    max-width: 100%;
-    margin-left: -1rem;
+
+.dropdown,.dropdown-2,.dropdown-3{
+    width: 95%;
+ }
+ .business{
+    font-size: 0.9rem;
  }
  .business-img{
     width: 400px;
@@ -1022,7 +1038,7 @@ font-size: 2.5rem ;
     .nav-ul{
    position: relative;
    width: 80%;
-   height: 22.6rem;
+   height: 24rem;
    left: -100%;
    background-color: white;
    transition: all  .5s;

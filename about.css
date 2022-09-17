@@ -432,6 +432,17 @@ animation: slideFromBottom .6s ease-in;
  }
 }
 
+
+@media screen and (min-width: 991px) and (max-width: 1310px){
+   
+    .nav-img{
+        position: absolute;
+        left: 10px;
+        bottom: 15px;
+        
+    }
+}
+
 /*Nav menu media query*/
 @media (max-width: 991px){
     nav .nav-ul li a{

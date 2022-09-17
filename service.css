@@ -265,6 +265,8 @@ position: relative;
     color: #0f17a1;
 }
 
+/* mobile phones */
+
 @media screen and (max-width: 480px){
 html,body{
     font-size: 0.9rem;
@@ -272,6 +274,17 @@ html,body{
 .header-container{
     height: 40%;
 }
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1310px){
+   
+    .nav-img{
+        position: absolute;
+        left: 10px;
+        bottom: 15px;
+        
+    }
 }
 
 @media screen and (max-width: 991px){

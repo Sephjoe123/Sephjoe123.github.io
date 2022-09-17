@@ -447,6 +447,18 @@ textarea{
      .box{
         width: 90%;
      }
+     input{
+        padding: 5%;
+     }
+     .reach-out i{
+        font-size: 2.5rem;
+     }
+     .header-container{
+        height: 40%;
+     }
+     html,body{
+        font-size: 0.9rem;
+     }
   }
 
 /*Nav menu media query*/

@@ -403,6 +403,12 @@ animation: slideFromBottom .6s ease-in;
         height: auto;
         padding: 7% 0px;
      }
+     html,body{
+        font-size: 0.9rem;
+     }
+     .header-container{
+        height: 40%;
+     }
     
      .work h1{
         margin-left: -4.3rem;

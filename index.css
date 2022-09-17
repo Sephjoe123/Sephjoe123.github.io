@@ -92,7 +92,6 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 width: 100%;
-height: 900px;
 position: relative;
 z-index: -5;
 
@@ -130,8 +129,6 @@ font-size: 0.9rem;
     animation: slideFromLeft .9s ease-in;
 }
 .header-img{
-    display: block;
-    text-align: right;
     max-width: 100%;
     height: auto;
     margin-top: 5rem;
@@ -188,7 +185,7 @@ h3.btn:hover{
     }
     
     .box{
-        max-width: 420px;
+        max-width: 27rem;
         border: 1px solid rgb(244, 238, 238);
         height: 300px;
         background-color: #f7f7f7;
@@ -216,7 +213,6 @@ h3.btn:hover{
     .services p{
         font-size: 1rem;
         margin: 0 0 20px;
-        
     }
 
     .text-primary,.icon-2{
@@ -289,9 +285,8 @@ h5.btn:hover{
     margin: auto;
 }
 #tool-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10rem
+    display: flex;
+    gap: 6rem
 }
 .tool h1{
     max-width: 500px;
@@ -300,8 +295,12 @@ h5.btn:hover{
     font-size: 0.9rem;
 }
 .tool-text{
-    max-width: 580px;
-    margin-top: 10rem;
+    width: 37.5rem;
+    margin-top: 7rem;
+    line-height: 2rem;
+}
+#tool-container h2{
+    line-height: 1.5;
 }
 
 .last-text{
@@ -524,11 +523,9 @@ font-weight: bold;
     color: rgb(111, 111, 111);
     font-size: 0.95rem;
     border: 0.5px solid var(--white-color);
-    width: 600px;
+    max-width: 100%;
 }
-.business-dropdown{
-    width: 400
-}
+
 .dropdown-content,.dropdown-content-2,.dropdown-content-3{
     display: none;
     position: absolute;
@@ -774,24 +771,6 @@ position: relative;
     font-size: 3rem ;
 }
 
-/* tool */
-#tool-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    display: flex;
-    flex-direction: column-reverse;
-    width: 90%;
-}
-.tool{
-   height: auto;
-}
-.tool-text{
-    margin-top: -10rem;
-}
-.tool img{
-   height: auto;
-   max-width: 100%;
-}
 
 /* pricing */
 .pricing{
@@ -849,7 +828,7 @@ margin-left: -3.5rem
    margin-left: 3rem;
 }
 }
-@media screen and  (min-width: 650px) and (max-width: 900px){
+@media screen and  (min-width: 650px) and (max-width: 1020px){
     .blog-container{
         display: block;
         width: 80%;
@@ -873,7 +852,6 @@ margin-left: -3.5rem
         padding: 7%;
         height: auto;
      }
-     
      #logo-wrap{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -885,12 +863,47 @@ margin-left: -3.5rem
         flex-direction: row;
     
      }
-     
-     
+     #tool-container{
+        flex-direction: column-reverse;
+     }
+     .tool-text{
+        margin-top: -7rem;
+     }
+     .pricing{
+        padding-top: 15%;
+     }
+    .business{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }  
 }
 
  /* media queries for small mobile phones and medium screen size
  */
+ @media screen and (max-width: 360px){
+    .dropdown,.dropdown-2,.dropdown-3{
+        max-width: 80%;
+        margin: auto;
+        margin-left: 1rem;
+    }
+    .business h1{
+        font-size: 1rem;
+        max-width: 70%;
+        margin: auto;
+    }
+    .business img{
+        width: 90%;
+    }
+    .pricing h1{
+        margin-top: -1rem;
+    }
+    .records i{
+    position: relative;
+    right: 0.8rem;
+    }
+ }
+
  @media screen and (max-width: 400px){
  .blog{
     width: 95%;
@@ -899,7 +912,7 @@ margin-left: -3.5rem
  .work{
     padding: 10%;
  }
- }
+ } 
 
  @media screen and (max-width: 590px){
  .m-query{
@@ -982,13 +995,28 @@ max-width: 80%;
 }
 
 /* tool */
+#tool-container{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 90%;
+}
+.tool{
+    height: auto;
+}
+.tool-text{
+    margin-top: -5rem
+}
+.tool img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
 
 /* records */
 .records{
    padding: 7%;
    height: auto;
 }
-
 #logo-wrap{
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -1029,16 +1057,90 @@ font-size: 2.5rem ;
     height: 1600px;
  }
 }
+ 
+/* Large screen sizes */
+@media screen and (min-width: 991px) and (max-width: 1310px){
+    .m-query{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 5%;
+    }
+    .nav-img{
+        position: absolute;
+        left: 10px;
+        
+    }
+   /* home */
+    #header-container{
+     display: flex;
+     flex-direction: column;
+     margin-top: -10rem;
+     max-width: 70%;
+
+    }
+    .break-1{
+        display: none;
+    }
+    .header-img{
+        margin-top: -10rem;
+    }
+
+    /* services */
+    .box{
+        max-width: 90%;
+    }
+    
+    /* tool */
+    #tool-container{
+        display: flex;
+      flex-direction: column-reverse;
+    }
+    .tool-text{
+        width: 80%;
+        margin: auto;
+        display: block;
+        margin-top: -7rem;
+    }
+    .tool img{
+       max-width: 100%;
+       margin: auto;
+       display: block;
+    }
+/* pricing */
+#card-container{
+    display: flex;
+    width: 95%;
+    gap: 1rem;
+}
+/* work */
+#text-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-left: 50px;
+}
+/* business */
+.business-dropdown{
+    width: 80%;
+}
+/*blog */
+.blog-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+}
 
 /*Nav menu media query*/
 @media (max-width: 991px){
     nav .nav-ul li a{
         font-size: 1rem;
     }
-   
 }
 
-@media (max-width: 858px){
+@media (max-width: 991px){
     .checkbtn{
        display: block;
     }
@@ -1092,4 +1194,3 @@ font-size: 2.5rem ;
         font-size: 0.8rem;
       }
   }
- 

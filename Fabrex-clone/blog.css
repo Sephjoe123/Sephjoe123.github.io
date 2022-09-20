@@ -351,9 +351,23 @@ position: relative;
     display: none;
 }
 }
+/* mobile phones */
 
 
+@media screen and  (max-width: 480px){
+.header-container{
+    height: 40%;
+}
+html,body{
+    font-size: 0.9rem;
+}
+.blog-container{
+ width: 90%;
+ height: 90%;
+}
 
+
+}
  @media screen and  (min-width: 650px) and (max-width: 900px){
     .blog-container{
         display: block;
@@ -362,6 +376,16 @@ position: relative;
     }
 
  }
+
+ @media screen and (min-width: 991px) and (max-width: 1310px){
+   
+    .nav-img{
+        position: absolute;
+        left: 10px;
+        bottom: 15px;
+        
+    }
+}
 /*Nav menu media query*/
 @media (max-width: 991px){
     nav .nav-ul li a{
@@ -435,4 +459,3 @@ position: relative;
         display: none;
     }
   }
-  

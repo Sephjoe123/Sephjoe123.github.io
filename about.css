@@ -403,6 +403,12 @@ animation: slideFromBottom .6s ease-in;
         height: auto;
         padding: 7% 0px;
      }
+     html,body{
+        font-size: 0.9rem;
+     }
+     .header-container{
+        height: 40%;
+     }
     
      .work h1{
         margin-left: -4.3rem;
@@ -424,6 +430,17 @@ animation: slideFromBottom .6s ease-in;
  .about img{
     width: 90%;
  }
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1310px){
+   
+    .nav-img{
+        position: absolute;
+        left: 10px;
+        bottom: 15px;
+        
+    }
 }
 
 /*Nav menu media query*/

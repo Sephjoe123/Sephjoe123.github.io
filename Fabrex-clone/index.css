@@ -88,13 +88,14 @@ float: left;
 .visible{
     opacity: 0;
     position: relative;
-    transition:  ease-in-out .8s;
+    transition: all ease-in-out .5s;
     transform: translateY(100px);
 }
 .visible.show{
    opacity: 1;
-   transition: ease-in-out .8s;
-   transform: translateY(-70px);
+   transition: all ease-in-out .5s;
+   transform: translateY(-50px);
+
 }
 
 /*code for the home section -1st section*/
@@ -744,13 +745,18 @@ position: relative;
 
 /*Code ends here*/
 
-@media  (max-width: 380px){
+@media  (max-width: 480px){
 .tool-text{
     max-width: 95%;
     margin: auto;
 }
+.tool-text{
+    margin-top: -5rem
+}
 #tool-container{
-    padding-top: 10%;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    max-width: 90%;
 }
 }
 /*media queries for medium sized screens*/
@@ -1015,17 +1021,11 @@ max-width: 80%;
 }
 
 /* tool */
-#tool-container{
-  display: flex;
-  flex-direction: column-reverse;
-  width: 90%;
-}
+
 .tool{
     height: auto;
 }
-.tool-text{
-    margin-top: -5rem
-}
+
 .tool img{
     width: 100%;
     height: auto;

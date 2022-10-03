@@ -8,12 +8,12 @@
             </label>
             <ul class ="nav-ul">
             <div class ="menu">
-       <li> <a class ="link" href ="index.html">Home </a></li> &nbsp; &nbsp; &nbsp;
+       <li> <a class ="link" href ="http://127.0.0.1:5500/index.html">Home </a></li> &nbsp; &nbsp; &nbsp;
        <li> <a class ="link" href ="about.html">About us</a></li> &nbsp; &nbsp; &nbsp;
        <li> <a class ="link" href ="#features">Features</a></li> &nbsp; &nbsp; &nbsp;
-       <li> <a class ="link" href ="service.html">Services</a></li>  &nbsp; &nbsp; &nbsp;
+       <li> <a class ="link" href ="Landing page\service.html\service.html">Services</a></li>  &nbsp; &nbsp; &nbsp;
        <li> <a class ="link" href ="#blog">Blog</a></li> &nbsp; &nbsp; &nbsp;
-       <li> <a class ="link" href ="contact-us.html">Contact us</a></li> &nbsp; &nbsp; &nbsp;
+       <li> <a class ="link" href ="http://127.0.0.1:5500/contact-us.html">Contact us</a></li> &nbsp; &nbsp; &nbsp;
        <img class ="nav-img" src = "https://fabrex.websitelayout.net/demos/startup-agency/img/logos/logo.png">
     </ul>
     </div>
@@ -27,7 +27,7 @@
  <link rel="stylesheet" type="text/css" href="./index.css"/>
  <script src="https://kit.fontawesome.com/153c373bd9.js" crossorigin="anonymous"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-
+ <script src = "script.js"></script>
 </header>
 
 
@@ -72,7 +72,7 @@
       </div>
 
       <div id = "services">
-      <section class="services section-container m-query">
+      <section class="services section-container m-query visible">
       <div class="service-text">
         <h2>
             We Provide Awesome Services
@@ -128,7 +128,7 @@
 
        <div id = "features">
 
-      <section class ="features section-container m-query">
+      <section class ="features section-container m-query visible">
      <div id ="img-2">
          <img class ="feature-img" src ="https://fabrex.websitelayout.net/demos/startup-agency/img/content/content-06.png">
        </div><!---image div-->
@@ -155,7 +155,7 @@
             
     </section>     
       </div>
- <section class ="tool section-container m-query ">
+ <section class ="tool section-container m-query visible">
     <div id = "tool-container">
       <div class = "tool-text">
         <h1>
@@ -185,7 +185,7 @@
 
     </section>
 
- <section class ="records section-container m-query">
+ <section class ="records section-container m-query visible">
       
     <div id = "logo-wrap">
      <span class = "logo-items">
@@ -244,7 +244,7 @@
     
 
  </section>
- <section class ="pricing section-container">
+ <section class ="pricing section-container visible">
     <h1>
         Pricing Table
     </h1>
@@ -320,7 +320,7 @@
     </div><!--card-container div-->
  </section>
 
- <section class ="client section-container">
+ <section class ="client section-container visible">
  <h1> 
      What our client say
  </h1>  
@@ -338,7 +338,7 @@
  </div><!--item-2-->
 </section>
 
-<section class ="work section-container">
+<section class ="work section-container visible">
     <div id ="text-container">
     <h1>
         How it works
@@ -396,7 +396,7 @@
    
 </section>
 
-<section class ="business section-container m-query">
+<section class ="business section-container m-query visible">
     
     <img class ="business-img" src
      ="https://fabrex.websitelayout.net/demos/startup-agency/img/content/content-03.png">
@@ -455,7 +455,7 @@
 
 
     <div id="blog">
-<section class ="blog section-container m-query">
+<section class ="blog section-container m-query visible">
     <h1>
         Latest Blog Posts
     </h1>
@@ -545,7 +545,7 @@ Joexef87@gmail.com
         hi
     </h1>
 </div>
-<div class ="contact-icon">
+<div class ="contact-icon ">
 
 <a href="https://www.facebook.com/joseph.bello.3956/?viewas=100000686899395"><i class="fa-brands fa-facebook-f"></i></a>
 <a href="https://twitter.com/Sephjoe12"><i class="fa-brands fa-twitter"></i></a>
@@ -556,7 +556,9 @@ Joexef87@gmail.com
 </section>
 </div>
 <!--footer-->
-<footer id ="footer">
+
+<footer class=""  id ="footer">
+
 © 2022
 Design by 
 <a href ="https://fabrex.websitelayout.net/demos/startup-agency/index.html#!" target="_blank"> Fabrex</a>

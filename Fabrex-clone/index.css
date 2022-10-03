@@ -85,6 +85,18 @@ float: left;
 
 /*Nav menu ends here */
 
+.visible{
+    opacity: 0;
+    position: relative;
+    transition:  ease-in-out .8s;
+    transform: translateY(100px);
+}
+.visible.show{
+   opacity: 1;
+   transition: ease-in-out .8s;
+   transform: translateY(-70px);
+}
+
 /*code for the home section -1st section*/
 .home{
 background: url(https://fabrex.websitelayout.net/demos/startup-agency/img/banner/banner.jpg);

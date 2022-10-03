@@ -755,7 +755,7 @@ position: relative;
 }
 #tool-container{
     flex-direction: column-reverse;
-    gap: 5rem;
+    gap: 5.5rem;
     max-width: 90%;
 }
 }

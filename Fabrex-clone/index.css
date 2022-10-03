@@ -732,6 +732,15 @@ position: relative;
 
 /*Code ends here*/
 
+@media  (max-width: 380px){
+.tool-text{
+    max-width: 95%;
+    margin: auto;
+}
+#tool-container{
+    padding-top: 10%;
+}
+}
 /*media queries for medium sized screens*/
 @media  (max-width: 990px){
     #header-container,.m-query,
@@ -770,7 +779,6 @@ position: relative;
 .services i {
     font-size: 3rem ;
 }
-
 
 /* pricing */
 .pricing{

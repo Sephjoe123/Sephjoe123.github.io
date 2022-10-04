@@ -749,10 +749,9 @@ position: relative;
 .tool-text{
     max-width: 95%;
     margin: auto;
+    margin-top: 5rem;
 }
-.tool-text{
-    
-}
+
 #tool-container{
     flex-direction: column-reverse;
     gap: 10rem;

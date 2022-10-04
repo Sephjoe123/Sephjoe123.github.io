@@ -751,7 +751,7 @@ position: relative;
     margin: auto;
 }
 .tool-text{
-    margin-top: -5rem
+    
 }
 #tool-container{
     flex-direction: column-reverse;

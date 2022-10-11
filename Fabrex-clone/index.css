@@ -622,19 +622,19 @@ font-size: 1.9rem;
     font-size: 1.1rem;   
 }
 /*Code ends here*/
+/* contact-section */
 
-/*Code for 11th section*/
 .contact{
     background: var(--header-color);
-    height: 250px;
+    height: auto;
+    padding: 3.5%;
     }
 
 .contact-text{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-gap: 20rem;
-position: relative;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+text-align: center;
+gap: 5rem;
 }
 .contact-text h2{
     color: var(--white-color);
@@ -670,23 +670,21 @@ position: relative;
 .contact-text{
     border-bottom: 1px solid rgb(69, 65, 65);
     position: absolute;
-    padding: 2rem;
+    padding: 3rem;
     margin-bottom: 7.5rem;
+    width: 50%;
 }
 .contact-icon{
     font-size: 1.5rem;
-    margin-top: 5rem;
+    margin-top: 120px;
     color: rgb(210, 206, 206);
     display: flex;
     gap: 2rem;
-    margin-right: 4rem;
+    text-align: center;
+    
 }
-.contact-icon a {
-    color: #0f17a1;
-}
-/*Code ends here*/
+/* footer */
 
-/*Code for footer section -Last section*/
 #footer{
     background-color: #191919;
     color:#f7f7f7;
@@ -698,11 +696,16 @@ position: relative;
 #footer a{
     font-size: 1.2rem;
     text-decoration: none;
+    color: #0f17a1;
 }
+/*Code ends here*/
+
+/*Code for footer section -Last section*/
 
 .tool-br,.break-1{
     display: static;
 }
+
 
 /* Animations */
 
@@ -749,15 +752,41 @@ position: relative;
 .tool-text{
     max-width: 95%;
     margin: auto;
-    margin-top: 2rem;
 }
-
+.tool-text{
+    margin-top: -5rem
+}
 #tool-container{
     flex-direction: column-reverse;
-    gap: 10rem;
+    gap: 3rem;
     max-width: 90%;
 }
 }
+@media  (max-width: 1200px){
+.contact-text{
+    grid-template-columns: 1fr;
+}
+.contact{
+  height: 500px;
+  padding: 5%;
+  text-align: center;
+}
+.contact-icon{
+    margin-top: 400px;
+}
+}
+@media  (max-width: 350px){
+.contact-text{
+    width: 70%;
+}
+}
+@media  (max-width: 480px){
+#tool-container{
+    margin: 0;
+    gap: 5rem;
+}
+}
+
 /*media queries for medium sized screens*/
 @media  (max-width: 990px){
     #header-container,.m-query,
@@ -767,6 +796,7 @@ position: relative;
         height: auto;
         padding: 4% 0px;
     }
+
 /* home */
 #header-container{
     margin: auto;
@@ -834,24 +864,7 @@ margin-left: -3.5rem
 }
 
 /* contact */
-.contact-text{
-   display: block;
-   margin: auto;
-   margin-top: -5rem;
-}
-.info{
-    text-align: center;
-    padding: 20px;
-}
-.contact{
-    height: 500px;
-}
 
-.contact-icon{
-   position: absolute;
-   bottom: 30;
-   margin-left: 3rem;
-}
 }
 @media screen and  (min-width: 650px) and (max-width: 1020px){
     .blog-container{
